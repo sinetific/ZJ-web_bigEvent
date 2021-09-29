@@ -1,0 +1,33 @@
+Git 命令
+ 一、
+git init     --- 1.初始化Git仓库
+git add .   --- 2.把项目的准备文件添加到暂存区
+git commit -m "init project"  --- 3.本地提交命令
+登录GitHub，创建一个new repositry 仓库,复制提示的代码行命令：
+（1）git remote add origin git @github.com --- 将本地仓库与GitHub进行关联
+（2）git branch -m main
+（3）git push -u origin main --- 将本地仓库上传到GitHub
+
+git checkout -b login   --- 4.在本地创建新的分支‘login’
+然后开始进行登录和注册页面的开发
+
+
+二、
+登录和注册页面开发完成后
+git branch --- 5.查看当前分支 
+git add . ---6.将修改好的文件添加到暂存区
+git commit -m "完成了注册和登录页面的开发" --- 7.再重新进行本地提交命令
+git push -u origin login --- 8.将本地的login分支推送到云端的GitHub目录中命名为login分支
+将login合并到main分支中
+git checkout main --- 9.将当前分支切换到main分支上
+git branch ---  10.查看当前分支,是否切换成功为main
+git merge login --- 11.将login分支合并到main分支里
+git push --- 12.把修改过后的文件分支推送到云端
+
+git checkout -b index --- 13.基于main分支 创建一个index新的分支进行主页页面的开发
+
+
+三、
+主页页面开发完成后
+
+
