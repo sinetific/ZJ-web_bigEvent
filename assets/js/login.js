@@ -63,7 +63,7 @@ $(function(){
             data:$(this).serialize(),
             success:function(res){
                 if(res.status !== 0){
-                    console.log('denglushibai')
+                    // console.log('denglushibai')
                     return layer.msg('登陆失败！')
                 }
                 layer.msg('登陆成功！')
